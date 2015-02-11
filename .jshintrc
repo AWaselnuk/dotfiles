@@ -1,0 +1,39 @@
+{
+    "node": true,
+    "camelcase": false,
+    "curly": true,
+    "immed": true,
+    "latedef": true,
+    "newcap": true,
+    "noarg": true,
+    "undef": true,
+    "unused": false,
+    "strict": false,
+    "trailing": true,
+    "smarttabs": true,
+    "browser": true,
+    "eqnull": true,
+    "validthis": true,
+    "globals": {
+        "$": false,
+        "jQuery": false,
+        "MGD": false,
+        "mgdAmplify": false,
+        // Jasmine Globals
+        "jasmine": false,
+        "describe": false,
+        "xdescribe": false,
+        "beforeEach": false,
+        "afterEach": false,
+        "it": false,
+        "xit": false,
+        "expect": false,
+        "spyOn": false,
+        // JQuery Jasmine Globals
+        "loadFixtures": false,
+        "appendLoadFixtures": false,
+        "readFixtures": false,
+        "setFixtures": false,
+        "appendSetFixtures": false
+    }
+}
