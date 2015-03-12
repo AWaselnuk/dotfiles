@@ -34,7 +34,8 @@
     "*.pdf",
     "*.swf",
     "*.jar",
-    "*.zip"
+    "*.zip",
+    "source_maps/*"
   ],
   "bold_folder_labels": false,
   "caret_extra_bottom": 0,
@@ -99,8 +100,8 @@
   "font_size": 14,
   "gpu_window_buffer": "auto",
   "gutter": true,
-  "highlight_line": false,
-  "highlight_modified_tabs": false,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
   "hot_exit": true,
   "ignored_packages":
   [
@@ -136,6 +137,8 @@
   "remember_open_files": true,
   "rulers":
   [
+    80,
+    100
   ],
   "save_on_focus_lost": false,
   "scroll_past_end": true,
