@@ -1,7 +1,7 @@
 {
   "always_prompt_for_file_reload": false,
   "always_show_minimap_viewport": false,
-  "animation_enabled": true,
+  "animation_enabled": false,
   "atomic_save": true,
   "auto_close_tags": true,
   "auto_complete": true,
