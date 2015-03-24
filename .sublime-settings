@@ -1,7 +1,7 @@
 {
   "always_prompt_for_file_reload": false,
   "always_show_minimap_viewport": false,
-  "animation_enabled": false,
+  "animation_enabled": true,
   "atomic_save": true,
   "auto_close_tags": true,
   "auto_complete": true,
@@ -37,7 +37,7 @@
     "*.zip",
     "source_maps/*"
   ],
-  "bold_folder_labels": false,
+  "bold_folder_labels": true,
   "caret_extra_bottom": 0,
   "caret_extra_top": 0,
   "caret_extra_width": 0,
@@ -119,8 +119,8 @@
   ],
   "index_files": true,
   "line_numbers": true,
-  "line_padding_bottom": 0,
-  "line_padding_top": 0,
+  "line_padding_bottom": 0.6,
+  "line_padding_top": 0.6,
   "margin": 4,
   "match_brackets": true,
   "match_brackets_angle": false,
