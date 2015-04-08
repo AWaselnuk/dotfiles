@@ -1,2 +1,2 @@
 # dotfiles
-My dots are working!
+My dots are working! Hurrah!
