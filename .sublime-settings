@@ -36,7 +36,7 @@
     "*.jar",
     "*.zip",
     "source_maps/*",
-    ".scssc"
+    "*.scssc"
   ],
   "bold_folder_labels": true,
   "caret_extra_bottom": 0,
