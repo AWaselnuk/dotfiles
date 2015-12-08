@@ -35,7 +35,8 @@
     "*.swf",
     "*.jar",
     "*.zip",
-    "source_maps/*"
+    "source_maps/*",
+    ".scssc"
   ],
   "bold_folder_labels": true,
   "caret_extra_bottom": 0,
