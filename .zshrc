@@ -47,10 +47,10 @@ ZSH_THEME=awesomepanda
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git rails colorize colored-man rake)
 
-# User configuration
-
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/awaselnuk/shell-plugins"
-# export MANPATH="/usr/local/man:$MANPATH"
+
+# Add packages to path for crystallang
+export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,15 +81,27 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias be="bundle exec"
 alias itest="bundle exec ruby -Itest"
-alias rake="noglob bundle exec rake"
 alias cdsuits="cd ~/code/mamp/suits/wp-content/themes/suits_his_style"
 alias bs="browser-sync start --proxy='localhost:3000'"
 alias vi="vim"
-alias opentavern="curl -Ls https://burrow.io/mLPqH6pT-ss32g0o | bash -s"
-alias openssltavern="curl -Ls https://burrow.io/XoPMWrmL-ss32g0o | bash -s"
 
-# Functions
+# Reboot broken mac audio driver
+alias audiofix="sudo launchctl stop com.apple.audio.coreaudiod && sudo launchctl start com.apple.audio.coreaudiod"
+
+# Delete every local git branch that has been merged to master and prune
+alias grr="git branch --merged | egrep -v '(^\*|master|dev)' | xargs git branch -d && git prune"
+
+# FUNCTIONS
+
+# Loop spec until it fails
+
+loopspec() {
+  while (bundle exec rspec $1); do :; done
+}
+
+# Launch ngrok
 ngrok() {
   ~/code/ngrok http -host-header=rewrite $1
 }
@@ -97,6 +109,16 @@ ngrok() {
 # find files given an extension name and sort them by LOC
 find_by_loc() {
   find . -name $1 | xargs wc -l | sort -rn | head
+}
+
+# list running servers at a given port
+listsv() {
+  lsof -wni tcp:$1
+}
+
+# kill server at a given port
+killsv() {
+  kill -9 $1
 }
 
 # Theme Kit installation
@@ -108,3 +130,4 @@ PATH=/Users/awaselnuk/.themekit:$PATH
 
 # Source scripts for Shopify dev
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
+if [ -e /Users/awaselnuk/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/awaselnuk/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

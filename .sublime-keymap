@@ -1,7 +1,0 @@
-[
-  { "keys": ["alt+g"], "command": "git_status" },
-  { "keys": ["alt+c"], "command": "git_commit", "args": {"add": true} },
-  { "keys": ["super+shift+w"], "command": "close_all" },
-  { "keys": ["alt+s"], "command": "shell_exec_run", "args": {"command": "scss-lint '${file}'"}},
-  { "keys": ["alt+r"], "command": "shell_exec_run", "args": {"command": "osascript -e 'tell application \"Google Chrome\" to reload active tab of first window'"}}
-]

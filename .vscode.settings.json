@@ -1,43 +1,45 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontFamily": "Droid Sans, Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 13,
-    "editor.lineNumbers": "relative",
-    "editor.tabSize": 2,
-    "editor.rulers": [
-        80,
-        120
-    ],
-    "editor.autoIndent": true,
-    "editor.cursorStyle": "block",
-    "editor.minimap.enabled": false,
-    "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true,
-    "search.exclude": {
-        "**/node_modules": true,
-        "**/bower_components": true,
-        "**/tmp": true
-    },
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        }
-    ],
-    "window.zoomLevel": 0,
-    "eslint.run": "onSave",
-    "workbench.colorTheme": "Tomorrow Night Eighties",
-    "workbench.panel.location": "bottom",
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "ruby.lint": {
-        "rubocop": {
-            "lint": true,
-            "rails": true
-        }
+  "editor.fontFamily": "Droid Sans, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "editor.lineNumbers": "relative",
+  "editor.tabSize": 2,
+  "editor.rulers": [80, 120],
+  "editor.autoIndent": true,
+  "editor.cursorStyle": "block",
+  "editor.minimap.enabled": false,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/tmp": true
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
     }
+  ],
+  "window.zoomLevel": 1,
+  "eslint.run": "onSave",
+  "eslint.autoFixOnSave": true,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "ruby.useBundler": true,
+  "ruby.lint": {},
+  "ruby.format": false,
+  "vim.disableExtension": false,
+  "liveshare.featureSet": "insiders",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editor.showTabs": false,
+  "workbench.colorTheme": "Base16 Dark Oceanic Next",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true
 }
